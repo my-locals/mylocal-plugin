@@ -13,6 +13,7 @@ MyLocal은 업무 시간이 끝나면 열려 있는 개발 서버(node, java, do
 
 ```bash
 brew tap my-locals/mylocal
+brew trust --tap my-locals/mylocal
 brew install --cask mylocal
 ```
 

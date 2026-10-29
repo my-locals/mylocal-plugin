@@ -42,6 +42,7 @@ Homebrew로 MyLocal을 설치하면 앱 안의 `mylocal` CLI가 함께 연결됩
 
 ```bash
 brew tap my-locals/mylocal
+brew trust --tap my-locals/mylocal
 brew install --cask mylocal
 mylocal schema > /dev/null && echo ok
 ```
