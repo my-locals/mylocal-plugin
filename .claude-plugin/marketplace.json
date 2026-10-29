@@ -1,0 +1,28 @@
+{
+  "name": "mylocal",
+  "description": "Claude Code plugin for the mylocal CLI — MyLocal dev-server cleanup",
+  "owner": {
+    "name": "MyIAM"
+  },
+  "plugins": [
+    {
+      "name": "mylocal",
+      "source": "./",
+      "description": "Read MyLocal's activity log and diagnostics, and change its schedule, rules and cleanup settings from the terminal",
+      "version": "0.1.0",
+      "author": {
+        "name": "MyIAM",
+        "email": "sheldon.park@myiam.io"
+      },
+      "license": "Apache-2.0",
+      "keywords": [
+        "mylocal",
+        "dev-server",
+        "localhost",
+        "port",
+        "macos",
+        "cli"
+      ]
+    }
+  ]
+}

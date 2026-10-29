@@ -1,0 +1,26 @@
+{
+  "name": "mylocal",
+  "version": "0.1.0",
+  "description": "Read MyLocal's activity log and diagnostics, see which dev servers are open and why they would be cleaned up, and change its schedule, rules and cleanup settings from the terminal. Skill for the mylocal CLI.",
+  "author": {
+    "name": "MyIAM",
+    "email": "sheldon.park@myiam.io"
+  },
+  "repository": "https://github.com/my-locals/mylocal-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "mylocal",
+    "dev-server",
+    "localhost",
+    "port",
+    "macos",
+    "cli"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "mylocal",
+    "shortDescription": "MyLocal dev-server cleanup",
+    "developerName": "MyIAM",
+    "category": "Productivity"
+  }
+}
