@@ -1,5 +1,5 @@
 {
   "name": "mylocal",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Read MyLocal's activity log and diagnostics, see which dev servers are open and why they would be cleaned up, and change its schedule, rules and cleanup settings from the terminal. Skill for the mylocal CLI."
 }

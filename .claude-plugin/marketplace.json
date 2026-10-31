@@ -9,7 +9,7 @@
       "name": "mylocal",
       "source": "./",
       "description": "Read MyLocal's activity log and diagnostics, and change its schedule, rules and cleanup settings from the terminal",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
         "name": "MyIAM",
         "email": "sheldon.park@myiam.io"
