@@ -1,22 +1,22 @@
-# mylocal AI 코딩 에이전트 플러그인
+# mylocal plugin for AI coding agents
 
-MyLocal의 `mylocal` CLI용 AI 코딩 에이전트 스킬입니다. 에이전트가 MyLocal의 활동 로그를 분석하고, 문제를 진단하고, 지금 열린 개발 서버와 정리 판단 근거를 보고, 일정·규칙·정리 설정을 바꿀 수 있게 합니다.
+An AI coding agent skill for the `mylocal` CLI of MyLocal. It lets your agent analyze MyLocal's activity log, diagnose problems, see which dev servers are open and why they would be cleaned up, and change the schedule, rules and cleanup settings.
 
-서버를 정리·유지·연기하는 것은 에이전트가 하지 않습니다. 그 결정은 사용자가 MyLocal 앱에서 합니다.
+The agent does not stop, keep or snooze servers. You decide that in the MyLocal app.
 
-## 설치
+## Install
 
 ### Claude Code
 
 ```bash
-# 마켓플레이스 등록 (최초 1회)
+# Add the marketplace (first time only)
 claude plugin marketplace add my-locals/mylocal-plugin
 
-# 플러그인 설치
+# Install the plugin
 claude plugin install mylocal@mylocal
 ```
 
-로컬 개발:
+For local development:
 
 ```bash
 git clone https://github.com/my-locals/mylocal-plugin.git
@@ -36,9 +36,9 @@ codex plugin install mylocal
 agy plugin install https://github.com/my-locals/mylocal-plugin
 ```
 
-## 사전 요구사항
+## Requirements
 
-Homebrew로 MyLocal을 설치하면 앱 안의 `mylocal` CLI가 함께 연결됩니다.
+Installing MyLocal with Homebrew also links the `mylocal` CLI that comes inside the app.
 
 ```bash
 brew tap my-locals/mylocal
@@ -47,17 +47,17 @@ brew install --cask mylocal
 mylocal schema > /dev/null && echo ok
 ```
 
-DMG로 설치했다면 앱의 일반 > 정보에서 안내하는 명령으로 CLI를 `~/.local/bin`에 연결합니다.
+If you installed from the DMG, link the CLI into `~/.local/bin` with the command shown in the app under General > About.
 
-## 포함 내용
+## What's included
 
-| 에이전트 | 파일 | 범위 |
+| Agent | File | Scope |
 |---|---|---|
-| Claude Code | `skills/mylocal/SKILL.md` | `/mylocal` 스킬: MyLocal 활동 로그·진단·일정·규칙 관련 요청에 자동 트리거 |
-| Codex CLI | `skills/mylocal/SKILL.md` | `@mylocal` 스킬 |
-| Antigravity CLI | `skills/mylocal/SKILL.md` | 플러그인 스킬 |
+| Claude Code | `skills/mylocal/SKILL.md` | `/mylocal` skill: triggers on requests about MyLocal's activity log, diagnostics, schedule and rules |
+| Codex CLI | `skills/mylocal/SKILL.md` | `@mylocal` skill |
+| Antigravity CLI | `skills/mylocal/SKILL.md` | Plugin skill |
 
-## 업데이트
+## Update
 
 ```bash
 claude plugin update mylocal        # Claude Code
@@ -65,7 +65,7 @@ codex plugin upgrade mylocal        # Codex CLI
 agy plugin install https://github.com/my-locals/mylocal-plugin   # Antigravity CLI
 ```
 
-## 제거
+## Uninstall
 
 ```bash
 claude plugin uninstall mylocal     # Claude Code
@@ -73,6 +73,10 @@ codex plugin uninstall mylocal      # Codex CLI
 agy plugin uninstall mylocal        # Antigravity CLI
 ```
 
-## 라이선스
+## Feedback
 
-Apache 2.0. 자세한 내용은 [LICENSE](LICENSE)를 참고하세요.
+Bugs and ideas go to [my-locals/mylocal](https://github.com/my-locals/mylocal), in English or 한국어.
+
+## License
+
+Apache 2.0. See [LICENSE](LICENSE).

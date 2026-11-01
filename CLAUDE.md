@@ -15,7 +15,7 @@ MyLocal의 `mylocal` CLI용 AI 코딩 에이전트 플러그인입니다. MyLoca
 - `.codex-plugin/plugin.json`: Codex CLI 플러그인 메타데이터
 - `gemini-extension.json`: Antigravity CLI(`agy`)·Gemini CLI 공용 메타데이터
 - `skills/mylocal/SKILL.md`: 세 에이전트가 함께 쓰는 스킬. **원본은 `../mylocal-app/skills/mylocal/SKILL.md`**이고, 이 파일은 그 사본입니다(아래 "스킬 편집").
-- `README.md`: 설치·업데이트·제거 안내
+- `README.md`: 설치·업데이트·제거 안내. 공개 안내이므로 영어로 씁니다
 - `scripts/bump-version.sh`: 메타데이터 파일 4개의 `version`을 한 번에 바꿉니다. 사용법: `scripts/bump-version.sh 0.2.0`
 
 ## 개발
